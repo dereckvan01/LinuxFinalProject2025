@@ -1,0 +1,25 @@
+# 1. Create physical volumes
+sudo pvcreate /dev/xvdb /dev/xvdc /dev/xvde
+
+# 2. Create a volume group named linux2025
+sudo vgcreate linux2025 /dev/xvdb /dev/xvdc /dev/xvde
+
+# 3. Create logical volumes (adjust sizes as needed)
+sudo lvcreate -L 5G -n lv_home linux2025
+sudo lvcreate -L 10G -n lv_data linux2025
+
+# 4. Format the logical volumes
+sudo mkfs.ext4 /dev/linux2025/lv_home
+sudo mkfs.ext4 /dev/linux2025/lv_data
+
+# 5. Create mount points
+sudo mkdir -p /mnt/home_data /mnt/lv_data
+
+# 6. Mount the volumes
+sudo mount /dev/linux2025/lv_home /mnt/home_data
+sudo mount /dev/linux2025/lv_data /mnt/lv_data
+
+
+
+/dev/linux2025/lv_home    /mnt/home_data    ext4    defaults    0 2
+/dev/linux2025/lv_data    /mnt/lv_data      ext4    defaults    0 2
