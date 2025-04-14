@@ -25,3 +25,12 @@ Tasks:
     • Configure a Logical Volume Manager (LVM) setup with at least two partitions on your workstation (using the additional drives on your workstation VM)
     • Mount a remote NFS share from the server as a backup location for your workstation
     • Create a backup script that copies user home directories to the remote share
+    
+    Log Analysis and Remote Storage
+Tasks:
+    • Configure rsyslog to forward logs to a remote server
+    • Use journalctl, awk, grep, or sed to extract key log events, such as:
+        ◦ Failed SSH login attempts
+        ◦ Service failures
+        ◦ System reboots
+    • Set up log rotation using logrotate
