@@ -1,4 +1,10 @@
 # LinuxFinalProject2025
+👋 Hi, I’m @Tovar MAravilla Octavio
+👀 I’m finishing my NBCC coursse in Linux 
+🌱 I’m currently learning Bash 
+📫 How to reach me dereckvan01@gmail.com or otovarmaravilla01@mynbcc.ca
+This is my linux Final project
+
 build a Linux server that meets the following requirements, implement security best practices, and document the setup.
 
     Automated Script Management (System Maintenance)
