@@ -48,3 +48,5 @@ Tasks:
         ◦ CPU and memory usage
         ◦ Disk space usage
         ◦ Recent logins
+    Option 3: Remote Access with Cockpit
+        Install and configure the Cockpit web interface to monitor system performance and manage servers. Secure access with firewall and SSL settings. Extend monitoring to include addition nodes or plugins.
