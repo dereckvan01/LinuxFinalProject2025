@@ -5,8 +5,8 @@ sudo pvcreate /dev/xvdb /dev/xvdc /dev/xvde
 sudo vgcreate linux2025 /dev/xvdb /dev/xvdc /dev/xvde
 
 # 3. Create logical volumes (adjust sizes as needed)
-sudo lvcreate -L 5G -n lv_home linux2025
-sudo lvcreate -L 10G -n lv_data linux2025
+sudo lvcreate -L 7.5G -n lv_home linux2025
+sudo lvcreate -L 7.2G -n lv_data linux2025
 
 # 4. Format the logical volumes
 sudo mkfs.ext4 /dev/linux2025/lv_home
