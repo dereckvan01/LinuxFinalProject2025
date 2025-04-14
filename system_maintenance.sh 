@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# system_maintenance.sh - Performs basic system maintenance
+# Author: Your Name
+# Date: $(date '+%Y-%m-%d')
+
+LOGFILE="/var/log/system_maintenance.log"
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+
+log() {
+    echo "[$TIMESTAMP] $1" | tee -a "$LOGFILE"
+}
+
+log "===== System Maintenance Started ====="
+
+# Detect package manager
+if command -v apt > /dev/null; then
+    PM="apt"
+    UPDATE_CMD="apt update && apt upgrade -y"
+elif command -v dnf > /dev/null; then
+    PM="dnf"
+    UPDATE_CMD="dnf upgrade -y"
+else
+    log "No supported package manager found (apt or dnf). Exiting."
+    exit 1
+fi
+
+log "Updating packages using $PM..."
+eval $UPDATE_CMD >> "$LOGFILE" 2>&1
+log "Package update complete."
+
+# Clean up old log files (older than 7 days)
+LOG_CLEANUP_DIR="/var/log"
+log "Cleaning old log files in $LOG_CLEANUP_DIR..."
+find "$LOG_CLEANUP_DIR" -name "*.log" -type f -mtime +7 -exec rm -f {} \; >> "$LOGFILE" 2>&1
+log "Old log file cleanup complete."
+
+# Check disk usage
+log "Disk usage (df -h):"
+df -h >> "$LOGFILE"
+
+log "Top disk usage (du -sh /*):"
+du -sh /* 2>/dev/null | sort -hr | head -n 10 >> "$LOGFILE"
+
+# Check for failed SSH login attempts
+AUTH_LOG="/var/log/auth.log"
+if [ -f "$AUTH_LOG" ]; then
+    log "Failed SSH login attempts:"
+    grep "Failed password" "$AUTH_LOG" >> "$LOGFILE"
+else
+    log "Auth log ($AUTH_LOG) not found, skipping SSH login check."
+fi
+
+log "===== System Maintenance Completed ====="
