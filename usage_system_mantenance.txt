@@ -1,0 +1,29 @@
+
+system_maintenance.sh is a Bash script that automates common system maintenance tasks including:
+
+Updating installed packages via apt or dnf
+
+Cleaning up old .log files (older than 7 days)
+
+Displaying disk usage
+
+Reporting failed SSH login attempts
+
+Logging all operations to /var/log/system_maintenance.log
+
+Usage
+Download or create the script file: Save the script as system_maintenance.sh.
+
+Make it executable:
+
+bash
+
+chmod +x system_maintenance.sh
+Run with root privileges (required for updates and log access):
+
+bash
+sudo ./system_maintenance.sh
+View logs: Check the output in /var/log/system_maintenance.log:
+
+bash
+sudo less /var/log/system_maintenance.log
