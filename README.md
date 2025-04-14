@@ -9,3 +9,8 @@ Tasks:
         ◦ Checking disk usage (df, du)
         ◦ Checking for failed SSH login attempts (grep auth.log)
         ◦ Logging all actions to a dedicated log file
+Scheduling Future Tasks (Automation)
+Tasks:
+    • Create a cron job to run the maintenance script daily at 3 AM
+    • Set up a systemd timer as an alternative method
+    • Write a short report comparing cron and systemd timers
