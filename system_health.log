@@ -1,0 +1,30 @@
+==== System Health Report - Mon Apr 14 10:47:44 PM UTC 2025 ====
+
+Uptime:
+ 22:47:44 up 24 days,  5:35,  1 user,  load average: 0.00, 0.00, 0.00
+
+CPU and Memory Usage:
+top - 22:47:44 up 24 days,  5:35,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 126 total,   1 running, 125 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  9.1 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   1936.3 total,    172.7 free,    491.6 used,   1464.5 buff/cache     
+MiB Swap:   1987.0 total,   1986.2 free,      0.8 used.   1444.7 avail Mem 
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           194M  1.1M  193M   1% /run
+/dev/xvda2      9.8G  6.0G  3.3G  65% /
+tmpfs           969M     0  969M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/xvdb1      9.8G   24K  9.3G   1% /mnt/storage
+tmpfs           194M   12K  194M   1% /run/user/1000
+
+Recent Logins:
+reboot   system boot  6.8.0-55-generic Fri Mar 21 17:11   still running
+reboot   system boot  6.8.0-55-generic Mon Mar 17 19:29 - 19:30  (00:01)
+reboot   system boot  6.8.0-55-generic Mon Mar 17 19:24 - 19:28  (00:03)
+reboot   system boot  6.8.0-55-generic Mon Mar 17 19:23 - 19:24  (00:00)
+reboot   system boot  6.8.0-55-generic Tue Mar 11 13:55 - 19:22 (6+05:26)
+
+wtmp begins Tue Mar 11 11:19:38 2025
+
