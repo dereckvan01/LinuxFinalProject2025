@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # system_maintenance.sh - Performs basic system maintenance
-# Author: Your Name
+# Author: Tovar Mravilla Octavio
 # Date: $(date '+%Y-%m-%d')
 
 LOGFILE="/var/log/system_maintenance.log"
