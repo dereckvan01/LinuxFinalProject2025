@@ -14,3 +14,14 @@ Tasks:
     • Create a cron job to run the maintenance script daily at 3 AM
     • Set up a systemd timer as an alternative method
     • Write a short report comparing cron and systemd timers
+Local and Remote Storage Configuration
+Tasks:
+    • Configure a Logical Volume Manager (LVM) setup with at least two partitions on your workstation (using the additional drives on your workstation VM)
+    • Mount a remote NFS share from the server as a backup location for your workstation
+    • Create a backup script that copies user home directories to the remote share
+
+    Local and Remote Storage Configuration
+Tasks:
+    • Configure a Logical Volume Manager (LVM) setup with at least two partitions on your workstation (using the additional drives on your workstation VM)
+    • Mount a remote NFS share from the server as a backup location for your workstation
+    • Create a backup script that copies user home directories to the remote share
