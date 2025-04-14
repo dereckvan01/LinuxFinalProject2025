@@ -9,4 +9,4 @@
 /dev/disk/by-uuid/96a9910f-42c7-4f78-916a-526bd850da18 / ext4 defaults 0 1
 /dev/linux2025/lv_home /mnt/home_data ext4 defaults 0 2
 /dev/linux2025/lv_data /mnt/lv_data ext4 defaults 0 2
-
+172.16.1.10:/home/student/backups /mnt/remote_backup nfs defaults 0 0
