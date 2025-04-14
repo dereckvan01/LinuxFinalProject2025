@@ -30,3 +30,21 @@ Tasks:
         ◦ Service failures
         ◦ System reboots
     • Set up log rotation using logrotate
+
+    Service Deployment and Hardening
+Tasks:
+    • 
+    • Deploy an Nginx or Apache web server, configure a simple web page, and enable secure access using firewall rules
+    • Deploy an SFTP server for file transfers (use sftp via OpenSSH)
+    • (Optional) Integrate with Microsoft 365:
+        ◦ Configure Postfix or Exim to send system-generated emails to Microsoft 365
+
+
+    Monitoring and Reporting
+Tasks:
+    • Install and configure Glances, htop, or Nagios/Zabbix for real-time system monitoring
+    • Write a script (health_check.sh) that generates a system health report, including:
+        ◦ Uptime
+        ◦ CPU and memory usage
+        ◦ Disk space usage
+        ◦ Recent logins
