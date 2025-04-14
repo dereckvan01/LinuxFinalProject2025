@@ -1,0 +1,18 @@
+[Mon Apr 14 12:45:20 PM ADT 2025] Starting backup...
+tar: Removing leading `/' from member names
+tar: /home/student/.cache/ibus/dbus-WuoJJs7y: socket ignored
+tar: /home/student/.cache/ibus/dbus-4iqEbKuI: socket ignored
+tar: /home/student/.cache/ibus/dbus-m00aCbll: socket ignored
+tar: /home/student/.cache/ibus/dbus-cR6fM3le: socket ignored
+tar: /home/student/.cache/ibus/dbus-aHlblfWH: socket ignored
+[Mon Apr 14 12:45:31 PM ADT 2025] Backed up /home/student
+[Mon Apr 14 12:45:31 PM ADT 2025] Backup completed.
+[Mon Apr 14 12:50:08 PM ADT 2025] Starting backup...
+tar: Removing leading `/' from member names
+tar: /home/student/.cache/ibus/dbus-WuoJJs7y: socket ignored
+tar: /home/student/.cache/ibus/dbus-4iqEbKuI: socket ignored
+tar: /home/student/.cache/ibus/dbus-m00aCbll: socket ignored
+tar: /home/student/.cache/ibus/dbus-cR6fM3le: socket ignored
+tar: /home/student/.cache/ibus/dbus-aHlblfWH: socket ignored
+[Mon Apr 14 12:50:28 PM ADT 2025] Backed up /home/student
+[Mon Apr 14 12:50:28 PM ADT 2025] Backup completed.
